@@ -16,6 +16,7 @@ PROFILES_INI_PATHS = [
     '~/Library/Mozilla/Firefox',
     '~/Library/Application Support/Firefox/Profiles',
     '~/Library/Mozilla/Firefox/Profiles',
+    '~\AppData\Roaming\Mozilla\Firefox',
 ]
 PROFILES_INI = 'profiles.ini'
 
