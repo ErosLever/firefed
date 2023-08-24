@@ -83,7 +83,7 @@ class FeatureHelpersMixin:
                 dict_[new_name] = row[idx]
             return cls(**dict_)
 
-        con = sqlite3.connect(str(db_path))
+        con = sqlite3.connect(db_path.absolute().as_uri() + "?mode=ro", uri=True)
         con.row_factory = obj_factory
         cursor = con.cursor()
         if not query:
